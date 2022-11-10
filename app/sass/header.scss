@@ -1,0 +1,69 @@
+@import "vars";
+
+.header {
+  padding: 40px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+
+.menu {
+  &_list {
+    display: flex;
+
+  }
+
+  &_list-item~&_list-item {
+    padding-left: 35px;
+  }
+
+  &_list-link {
+    color: $title-color;
+    padding-bottom: 1px;
+    transition: all .4s;
+    @extend %Oxygen-4;
+
+    &:hover {
+      color: $ac-color;
+      border-bottom: 1px solid $ac-color;
+      @extend %Oxygen-5;
+    }
+  }
+
+  &_list-link--active {
+    border-bottom: 1px solid $ac-color;
+    color: $ac-color;
+    @extend %Oxygen-5;
+  }
+}
+
+.user-nav {
+  display: flex;
+
+  &__link {
+    position: relative;
+  }
+
+  &__link~&__link {
+    padding-left: 25px;
+  }
+
+  &__num {
+    position: absolute;
+    border-radius: 50%;
+    background-color: $ac-color;
+    color: #fff;
+    top: -13px;
+    right: -13px;
+    font-size: 12px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+}
