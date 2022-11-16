@@ -2,20 +2,13 @@
 @import "vars";
 @import "fonts";
 @import "header";
+@import "footer";
 
 body {
   @extend %Oxygen-5;
-  font-size: 16px;
-  line-height: 26px;
   color: $df-color;
 
 
-}
-
-.container {
-  padding: 0 15px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 @import 'media'
