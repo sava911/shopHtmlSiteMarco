@@ -1,5 +1,7 @@
-html {
+html,
+body {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -15,7 +17,6 @@ html {
 
 body.lock {
   overflow: hidden;
-
 }
 
 h1,
@@ -55,7 +56,9 @@ p {
   margin: 0;
 }
 
-
+input {
+  all: unset;
+}
 
 
 // .slick-dots {
@@ -94,3 +97,21 @@ p {
 //   border-radius: 2px;
 
 // }
+
+body {
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
