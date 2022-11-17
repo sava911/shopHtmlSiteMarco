@@ -1,8 +1,9 @@
-@import "global";
 @import "vars";
 @import "fonts";
-@import "header";
-@import "footer";
+@import "libs";
+@import "global";
+
+
 
 body {
   @extend %Oxygen-5;
@@ -11,4 +12,7 @@ body {
 
 }
 
+@import "header";
+@import "sliderTop";
+@import "footer";
 @import 'media'

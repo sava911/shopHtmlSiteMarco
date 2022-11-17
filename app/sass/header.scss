@@ -24,21 +24,21 @@
 
   &_list-link {
     color: $title-color;
-    padding-bottom: 1px;
+    padding-bottom: 0 2px 1px;
     transition: all .4s;
-    @extend %Oxygen-4;
+    @extend %Roboto-4;
 
     &:hover {
       color: $ac-color;
       border-bottom: 1px solid $ac-color;
-      @extend %Oxygen-5;
+      @extend %Roboto-7;
     }
   }
 
   &_list-link--active {
     border-bottom: 1px solid $ac-color;
     color: $ac-color;
-    @extend %Oxygen-5;
+    @extend %Roboto-7;
   }
 }
 

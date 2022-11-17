@@ -84,7 +84,7 @@
 
   &__form-input {
 
-    max-width: 320px;
+    max-width: 310px;
     width: 100%;
     background-color: #fff;
     padding: 12px 12px 15px;
@@ -99,11 +99,7 @@
   }
 
   &__form-btn {
-    background-color: $ac-color;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 18px;
-    box-shadow: 0 7px 20px 0 rgba(255, 17, 48, 0.3);
+    @extend %btn;
   }
 }
 
